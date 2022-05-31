@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- head is document metadata -->
+
+<head>
+  <title>Contact Page</title>
+  <meta name="author" content="Benny">
+  <meta charset="utf8">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="graphics/img_566323.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<!-- body is document content -->
+
+<body>
+  <header class="main-header">
+    <img class="logo" src="graphics/sorrento_by_the_sea_logo.jpg">
+    <nav class="navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="Local Area.html">Local Area</a>
+      <a href="contact.html">Contact</a>
+      <a href="price.html">price</a>
+    </nav>
+  </header>
+  <div class="banner contact">
+    <h1>Contact Us</h1>
+  </div>
+  <main class="content contact">
+    <form id="contact-form" method="get" action="/" role="form">
+        <label for="username">Your name</label>
+        <input type="text" id="username" name="name" placeholder="Jane Smith">
+        <label for="useremail">Your email address</label>
+        <input type="email" id="useremail" name="email" placeholder="janesmith@example.com">
+        <div class="checkbox">  
+        <label for="pnumber">Phone Number</label>
+        <input type="text" id="pnumber" placeholder="Your phone number..">
+        </div>
+        <div class="radio">
+          <!-- radio buttons -->
+          <input type="radio" name="origin" id="origin1" value="au" checked>
+          <label for="origin1">I am in Australia</label>
+          <input type="radio" name="origin" id="origin2" value="int">
+          <label for="origin2">I am outside Australia</label>
+        </div>
+        <h3>contact details</h3>
+        <div class="card">
+        <p>0435 123 456 42 Holyrood Avenu Sorrento VIC 3943
+        </p>
+        </div>
+        </select>
+        <label for="message">Message</label>
+        <textarea name="message" id="message" rows="5" cols="30" placeholder="your message to us"></textarea>
+        <button type="reset">
+          Reset
+        </button>
+        <button type="submit">Submit</button>
+    </form>
+  </main>
+</body>

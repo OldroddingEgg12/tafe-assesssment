@@ -1,0 +1,136 @@
+.logo {
+    width: 1000px;
+}
+.main-header {
+    background-color:  #682721;
+    
+}
+.navigation {
+    background-color: black;
+    /* text-align: center; */
+}
+.navigation a {
+    color: #fdfdfd;
+    text-decoration: none;
+    padding: 12px;
+    display: inline-block;
+}
+.navigation a:hover {
+    color: black;
+    background-color: white;
+}
+body {
+    background-color: rgb(209, 209, 209);
+    font-family: 'Source Code Pro', monospace;
+    margin: 0;
+}
+
+.banner {
+    background-image: url("graphics/aaron-burden-cEukkv42O40-unsplash.jpg");
+    aspect-ratio: 16/5;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    place-items: center;
+}
+.cheese {
+    aspect-ratio: 16/5;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    place-items: center;
+}
+.room {
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    place-items: center;
+}
+.bread {
+        aspect-ratio: 16/5;
+        background-size: cover;
+        background-position: center;
+        display: grid;
+        place-items: center;
+}
+.banner h1 {
+    font-size: 250%;
+    color: white;
+    text-shadow: black 2px 2px 1px;
+}
+.social a {
+    text-decoration: none;
+    color: black;
+    font-size: 200%;
+    margin: 0 20px;
+}
+.social {
+    text-align: center;
+}
+/* pseudo selector / class */
+.social a:hover {
+    color: yellow;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    /* margin-top:30px; */
+    margin: 30px;
+}
+.card img {
+    max-width: 100%;
+}
+.index.image {
+    aspect-ratio: 10/2.5;
+    overflow: hidden;
+}
+.card-image {
+    aspect-ratio: 30/2.5;
+    overflow: hidden;
+}
+/* selector for element that has both banner and contact classes */
+.banner.contact {
+    background-image: url("graphics/ocean_beach3.jpg");
+}
+
+.content.contact {
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+#contact-form {
+    grid-column-start: 2;
+    background-color: #ebe9e9;
+    padding: 30px 100px;
+    border-radius: 10px;
+}
+
+/* form styles */
+#contact-form > label {
+    display: block;
+    font-weight: bold;
+}
+
+#contact-form > input, 
+#contact-form > select,
+#contact-form > textarea {
+    min-width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    display: block;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: solid 1px #cccccc;
+}
+#contact-form > input:focus,
+#contact-form > select:focus,
+#contact-form > textarea:focus
+{
+    outline: rgb(0, 124, 87) solid 1px;
+}
+
+.checkbox, .radio {
+    padding: 15px 0;
+}
+
